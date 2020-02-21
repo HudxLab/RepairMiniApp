@@ -5,16 +5,21 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    default_info: {
+      avatarUrl:'/image/default_user.png',
+      scanUrl: '/image/qr_scan.png',
+    },
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    orderList: []
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  // bindViewTap: function() {
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -43,12 +48,19 @@ Page({
       })
     }
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  scanQrCode: function() {
+    wx.scanCode({
+      success(res) {
+        console.log(res);
+      }
     })
   }
 })

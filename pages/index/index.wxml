@@ -1,13 +1,52 @@
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+    <view class="avatar-block">
+      <image bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="avatar-icon" src="{{default_info.avatarUrl}}"mode="cover"></image>
+      <image wx:else class="avatar-icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="before-login">
+      点击头像登录
+      <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击头像登录</button> -->
+    </view>
+    <view wx:else class="post-login">
+      <view>
+        <label>姓名: </label><text></text>
+      </view>
+      <view>
+        <label>部门: </label><text></text>
+      </view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="scan" bindtap="scanQrCode">
+    <view class="scan-block">
+      <image class="scan-icon" src="{{default_info.scanUrl}}"></image>
+    </view>
+    <view class="scan-text">
+      扫描设备二维码
+    </view>
+  </view>
+  <view class="orderinfo">
+    <view class="orderinfoheader">
+      在途报修工单
+    </view>
+    <!-- <view class="orderinfoitem">
+      <view class="device-icon-block">
+        <image class="device-icon"></image>
+      </view>
+      <view class="orderinfotext">        
+        <view>
+          <label>报修人: </label>
+          <label>联系方式: </label>
+        </view>
+        <view>
+          <label>地点: </label>
+        </view>
+      </view>
+    </view> -->
+    <view wx:if="{{!orderList}}" class="orderlist"></view>
+    <view wx:else class="blanklist">
+      当前暂无工单
+    </view>
   </view>
 </view>
