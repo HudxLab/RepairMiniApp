@@ -1,2 +1,52 @@
 <!--pages/order/order.wxml-->
-<view class="intro">接口</view>
+<view>
+  <!-- <view class="order-info">
+    <view class="order-detail">
+      <label>设备类型</label>
+      <text>笔记本电脑</text>
+    </view>
+    <view class="order-detail">
+      <label>设备ID</label>
+      <text>100010001000100</text>
+    </view>
+    <view class="order-detail">
+      <label>设备位置</label>
+      <text>凤凰综合大楼301</text>
+    </view>
+    <view class="order-detail">
+      <label>使用人</label>
+      <text>杨志才</text>
+    </view>
+    <view class="order-detail">
+          <label>管理员</label>
+      <text>杨志才</text>
+    </view>
+    <view class="order-detail">
+          <label>报修人</label>
+      <text>杨志才</text>
+    </view>
+    <view class="order-detail">
+      <label>归属部门</label>
+      <text>IT支撑中心</text>
+    </view>
+    <view class="order-detail">
+      <label>报修人联系方式</label>
+      <text>12345678910</text>
+    </view>
+    <view class="order-detail">
+      <label>优先级</label>
+      <text>普通</text>
+    </view>
+    <view class="order-detail">
+      <label>超时时间</label>
+      <text>2020年2月22 16:00</text>
+    </view>
+  </view> -->
+  <dropDownMenu title="软硬件信息" data="{{list}}"></dropDownMenu>
+  <view class="order-action">
+    <button style="width:100%" type="primary" class="reply" size="default">处理</button>
+  </view>
+  <view class="map">
+    <map id="map" latitude="30.876661" longitude="120.085035" iconPath="/image/pin.png"></map>
+  </view>
+</view>

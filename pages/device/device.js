@@ -1,15 +1,11 @@
-// pages/order/order.js
+// pages/device/device.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [
-      {name: '设备类型', value: '笔记本电脑'},
-      {name: 'CPU', value: 'Intel Core i5 2.4G'},
-      {name: 'RAM', value: '8G'}
-    ]
+
   },
 
   /**

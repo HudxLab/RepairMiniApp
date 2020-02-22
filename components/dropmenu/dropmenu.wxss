@@ -1,0 +1,28 @@
+/* components/dropmenu/dropmenu.wxss */
+.drop-down-menu-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.drop-down-menu-main .drop-menu-header {
+  padding: 0 20rpx;
+  height: 88rpx;
+  width: 100%;
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.drop-down-menu-main .drop-menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  height: 68rpx;
+  font-size: 13px;
+  border-bottom: 1px solid #ffffff;
+  background-color: #f3f3f3;
+}

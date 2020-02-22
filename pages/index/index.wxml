@@ -26,15 +26,15 @@
       扫描设备二维码
     </view>
   </view>
-  <view class="orderinfo">
-    <view class="orderinfoheader">
+  <view class="ordersinfo">
+    <view class="ordersinfoheader">
       在途报修工单
     </view>
-    <!-- <view class="orderinfoitem">
+    <!-- <view class="ordersinfoitem">
       <view class="device-icon-block">
         <image class="device-icon"></image>
       </view>
-      <view class="orderinfotext">        
+      <view class="ordersinfotext">        
         <view>
           <label>报修人: </label>
           <label>联系方式: </label>

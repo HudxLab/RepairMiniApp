@@ -65,7 +65,7 @@
   align-items: center;
 }
 
-.orderinfo {
+.ordersinfo {
   margin: 0;
   /* padding: 20rpx 0; */
   width: 100%;
@@ -74,7 +74,7 @@
   background-color: #ffffff;
   flex: 1;
 }
-.orderinfo .orderinfoheader {
+.ordersinfo .ordersinfoheader {
   height: 68rpx;
   width: 100%;
   background-color: #333333;
@@ -84,29 +84,29 @@
   justify-content: center;
   align-items: center;
 }
-/* .orderinfo .orderinfoitem {
+/* .ordersinfo .ordersinfoitem {
   height: 118rpx;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.orderinfo .orderinfoitem .device-icon-block {
+.ordersinfo .ordersinfoitem .device-icon-block {
   height: 118rpx;
   width: 200rpx;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.orderinfo .orderinfoitem .device-icon-block .device-icon {
+.ordersinfo .ordersinfoitem .device-icon-block .device-icon {
   width: 88rpx;
   height: 88rpx;
   margin: 0 20rpx;
 }
-.orderinfo .orderinfoitem .orderinfotext {
+.ordersinfo .ordersinfoitem .ordersinfotext {
   font-size: 13px
 } */
-.orderinfo .blanklist {
+.ordersinfo .blanklist {
   height: 100%;
   width: 100%;
   font-size: 13px;

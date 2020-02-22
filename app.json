@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/order/order",
+    "pages/orders/orders",
     "pages/home/home",
-    "pages/report/report"
+    "pages/report/report",
+    "pages/order/order",
+    "pages/device/device"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,11 +28,17 @@
       {
         "pagePath": "pages/order/order",
         "text": "工单",
+        "iconPath": "image/user.png",
+        "selectedIconPath": "image/user_selected.png"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "工单",
         "iconPath": "image/order.png",
         "selectedIconPath": "image/order_selected.png"
       },
       {
-        "pagePath": "pages/order/order",
+        "pagePath": "pages/orders/orders",
         "text": "我的",
         "iconPath": "image/user.png",
         "selectedIconPath": "image/user_selected.png"

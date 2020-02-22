@@ -1,0 +1,8 @@
+<!--components/dropmenu/dropmenu.wxml-->
+<view class="drop-down-menu-main">
+  <view class="drop-menu-header">{{title}}</view>
+  <view wx:for="{{data}}" class="drop-menu-item">
+    <text>{{item.name}}</text>
+    <text>{{item.value}}</text>
+  </view>
+</view>
