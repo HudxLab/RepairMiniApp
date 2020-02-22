@@ -1,42 +1,4 @@
 /**index.wxss**/
-
-.userinfo {
-  display: flex;
-  width: 100%;
-  height: 200rpx;
-  flex-direction: row;
-  align-items: center;
-  background-color: #ffffff;
-}
-.userinfo .avatar-block {
-  height: 200rpx;
-  width: 200rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.userinfo .avatar-icon {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 0 20rpx;
-}
-.userinfo .before-login {
-  padding: 0 20rpx;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.userinfo .post-login {
-  padding: 0 20rpx;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.userinfo .post-login view {
-  margin: 10rpx 0;
-}
-
 .scan {
   background-color: #ffffff;
   margin: 20rpx 0;
@@ -64,19 +26,16 @@
   flex-direction: column;
   align-items: center;
 }
-
 .ordersinfo {
   margin: 0;
-  /* padding: 20rpx 0; */
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   flex: 1;
+  background-color: #ffffff;
 }
 .ordersinfo .ordersinfoheader {
   height: 68rpx;
-  width: 100%;
   background-color: #333333;
   color: #ffffff;
   display: flex;
@@ -84,28 +43,21 @@
   justify-content: center;
   align-items: center;
 }
-/* .ordersinfo .ordersinfoitem {
-  height: 118rpx;
-  width: 100%;
+.ordersinfo .order-list {
+  padding: 10rpx;
+  height: 88rpx;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #ffffff;
+  font-size: 13px;
+  border-bottom: 1px solid #f3f3f3;
 }
-.ordersinfo .ordersinfoitem .device-icon-block {
-  height: 118rpx;
-  width: 200rpx;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.ordersinfo .ordersinfoitem .device-icon-block .device-icon {
-  width: 88rpx;
-  height: 88rpx;
+.ordersinfo .order-list .device-icon {
+  width: 108rpx;
+  height: 68rpx;
   margin: 0 20rpx;
 }
-.ordersinfo .ordersinfoitem .ordersinfotext {
-  font-size: 13px
-} */
 .ordersinfo .blanklist {
   height: 100%;
   width: 100%;

@@ -4,54 +4,36 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     default_info: {
       avatarUrl:'/image/default_user.png',
       scanUrl: '/image/qr_scan.png',
+      laptopIcon: '/image/laptop.png',
+      desktopIcon: '/image/desktop.png',
+      printIcon: '/image/print.png',
+      faxIcon: '/image/fax.png',
+      defaultDeviceIcon: '/image/default_device.png',
     },
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    orderList: []
+    orderList: [
+      { id: 1, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 2, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 3, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 4, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'}
+    ]
   },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
-  },
-  getUserInfo: function (e) {
-    wx.login({
-      
-    })
-  },
+
   scanQrCode: function() {
     wx.scanCode({
       success(res) {
         console.log(res);
       }
+    })
+  },
+  getOrder: function() {
+    wx.navigateTo({
+      url: "/pages/order/order",
     })
   }
 })

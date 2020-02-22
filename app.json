@@ -26,19 +26,13 @@
         "selectedIconPath": "image/index_selected.png"
       },
       {
-        "pagePath": "pages/order/order",
-        "text": "工单",
-        "iconPath": "image/user.png",
-        "selectedIconPath": "image/user_selected.png"
-      },
-      {
         "pagePath": "pages/orders/orders",
         "text": "工单",
         "iconPath": "image/order.png",
         "selectedIconPath": "image/order_selected.png"
       },
       {
-        "pagePath": "pages/orders/orders",
+        "pagePath": "pages/home/home",
         "text": "我的",
         "iconPath": "image/user.png",
         "selectedIconPath": "image/user_selected.png"

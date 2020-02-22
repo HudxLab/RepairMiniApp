@@ -5,11 +5,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list: [
-      {name: '设备类型', value: '笔记本电脑'},
-      {name: 'CPU', value: 'Intel Core i5 2.4G'},
-      {name: 'RAM', value: '8G'}
-    ]
+    specs: [
+      { id: 1, name: '设备类型', value: '笔记本电脑' },
+      { id: 2, name: 'CPU', value: 'Intel Core i5 2.4G' },
+      { id: 3, name: 'IP', value: '134.99.1.1' },
+      { id: 3, name: '系统', value: 'windows 10' },
+    ],
+    orderInfo: [
+      { id: 1, name: '管理员', value: '杨志才' },
+      { id: 2, name: '使用人', value: '杨志才' },
+      { id: 3, name: '报修人', value: '杨志才' },
+      { id: 4, name: '报修人联系方式', value: '12345678910' },
+      { id: 5, name: '工单状态', value: '杨志才' },
+      { id: 6, name: '超时时间', value: '杨志才' },
+    ],
+    collapsed: false
   },
 
   /**

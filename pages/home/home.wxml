@@ -1,2 +1,21 @@
 <!--pages/home/home.wxml-->
-<view class="intro">接口</view>
+<view class="container">
+  <view class="userinfo">
+    <view class="avatar-block">
+      <image bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="avatar-icon" src="{{default_info.avatarUrl}}" mode="cover"></image>
+      <image wx:else class="avatar-icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <view bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="before-login">
+      点击头像登录
+      <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击头像登录</button> -->
+    </view>
+    <view wx:else class="post-login">
+      <view>
+        <label>姓名: </label><text></text>
+      </view>
+      <view>
+        <label>部门: </label><text></text>
+      </view>
+    </view>
+  </view>
+  </view>
