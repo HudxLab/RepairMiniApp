@@ -2,8 +2,10 @@
 <view class="container">
   <view class="userinfo">
     <view class="avatar-block">
-      <image bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="avatar-icon" src="{{default_info.avatarUrl}}" mode="cover"></image>
-      <image wx:else class="avatar-icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        <image bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="avatar-icon" src="{{default_info.avatarUrl}}" mode="cover"></image>
+        <image wx:else class="avatar-icon" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </button>
     </view>
     <view bindtap="getUserInfo" wx:if="{{!hasUserInfo && canIUse}}" class="before-login">
       点击头像登录

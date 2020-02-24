@@ -14,6 +14,10 @@
   justify-content: center;
   align-items: center;
 }
+.userinfo .avatar-block button {
+  background-color: transparent;
+  width: 300rpx;
+}
 .userinfo .avatar-icon {
   width: 128rpx;
   height: 128rpx;

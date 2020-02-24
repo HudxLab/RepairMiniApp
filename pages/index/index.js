@@ -3,6 +3,26 @@
 const app = getApp()
 
 Page({
+  onLoad: function(){
+    // wx.getSetting({
+    //   success: function(res){
+    //     if (res.authSetting["scope.userInfo"]==true){
+
+    //     }else {
+    //       wx.authorize({
+    //         scope: 'scope.userInfo',
+    //         success() {
+    //           wx.getUserInfo({
+    //             success: function(res){
+    //               console.log(res);
+    //             }
+    //           })
+    //         }
+    //       })
+    //     }
+    //   }
+    // })
+  },
   data: {
     default_info: {
       avatarUrl:'/image/default_user.png',
@@ -35,5 +55,5 @@ Page({
     wx.navigateTo({
       url: "/pages/order/order",
     })
-  }
+  },
 })

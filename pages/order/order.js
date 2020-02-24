@@ -19,14 +19,17 @@ Page({
       { id: 5, name: '工单状态', value: '杨志才' },
       { id: 6, name: '超时时间', value: '杨志才' },
     ],
-    collapsed: false
+    collapsed: false,
+    text: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      text: options.text
+    })
   },
 
   /**
@@ -75,6 +78,10 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
-  }
+    return {
+      title: 'ERROR',
+      desc: 'PAGE NOT FOUND',
+      path: 'pages/order/order?text=CAO'
+    }
+  },
 })
