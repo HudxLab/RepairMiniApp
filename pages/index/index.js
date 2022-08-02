@@ -37,10 +37,10 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     orderList: [
-      { id: 1, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
-      { id: 2, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
-      { id: 3, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
-      { id: 4, submit_by: '杨志才', address: '凤凰电信大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'}
+      { id: 1, submit_by: '杨志才', address: '凤凰大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 2, submit_by: '杨志才', address: '凤凰大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 3, submit_by: '杨志才', address: '凤凰大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'},
+      { id: 4, submit_by: '杨志才', address: '凤凰大楼综合楼3楼', device_type: '笔记本电脑', desc: '无法开机'}
     ]
   },
 
